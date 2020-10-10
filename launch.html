@@ -1,0 +1,65 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/2.0.5/aframe/build/aframe-ar.js"></script>
+</head>
+
+
+<body style=’margin : 0px; overflow: hidden;’>
+    <a-scene embedded arjs=’sourceType: webcam;’>
+        <a-marker preset=’hiro’>
+            <!-- Adding an OBJ file to an AR Project-->
+            <a-entity scale=".01, .01, .01"></a-entity>
+            <a-entity gltf-model=”url(img/models/scene.gltf)” scale=".05, .05, .05">
+            </a-entity>
+
+        </a-marker>
+        <a-entity camera>
+        </a-entity>
+    </a-scene>
+</body>
+
+
+
+
+
+
+
+
+
+<!-- <body>
+	<img id="hiro" src="img/hiro.png">
+	<img id="qr-code" src="img/qrCode.png">
+
+	<a-entity obj-model=”obj: url(/img/models/donut.obj); mtl: url(/img/models/donut..mtl)”>
+	</a-entity>
+</body> -->
+
+</html>
+
+
+
+
+
+
+<!-- <!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+<script src="https://raw.githack.com/jeromeetienne/AR.js/2.0.5/aframe/build/aframe-ar.js"></script>
+
+<body style='margin : 0px; overflow: scroll;'>
+    <a-scene embedded arjs>
+        <a-box position='0 0.5 0' material='opacity: 0.9;' material='color: yellow;'></a-box>
+        <a-marker-camera preset='hiro'></a-marker-camera>
+
+        <a-marker-camera preset='hiro'></a-marker-camera>
+		<a-marker type=’pattern’ url=’path/to/pattern-logo.patt’></a-marker>
+        <a-entity camera></a-entity>
+
+    </a-scene>
+</body>
+
+</html> -->
